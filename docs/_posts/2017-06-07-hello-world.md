@@ -3,4 +3,4 @@
 ---
 # hello first
 
-{{ page.date | date_to_string }}
+{{ page.date }}
