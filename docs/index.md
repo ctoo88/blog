@@ -1,6 +1,9 @@
----
----
-# 最新文章
+## 最新文章
 {% for post in site.posts %}
-  [{{ post.title }}]({{ post.url }})
+  <ul>
+    <li>
+      {{ post.title }}
+      <a href="{{ post.url }}">&nbsp;&nbsp;read more</a>
+    </li>
+  </ul>
 {% endfor %}
