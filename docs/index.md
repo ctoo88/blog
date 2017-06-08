@@ -1,3 +1,3 @@
-# 最新文章
+# 个人笔记
 
-[chapter01](http://ctoo88.github.io/blog/chapter01)
+* 2017/06/07 [微信公众号JS-SDK开发，服务端采用Node.js + MongoDB](http://ctoo88.github.io/blog/wechat_jssdk)
