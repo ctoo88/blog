@@ -1,4 +1,4 @@
-## 微信公众号JS-SDK开发，服务端采用Node.js + MongoDB
+## 微信公众号JS-SDK开发，服务端采用Node.js
 
 2017/06/07
 
@@ -121,13 +121,13 @@ jsapi_ticket是公众号用于调用微信JS接口的临时票据。正常情况
 
     4a126064a2d39c1bbffba2538dc35da1
 
-注意事项
+##### 注意事项
 
-1.签名用的noncestr和timestamp必须与wx.config中的nonceStr和timestamp相同。\
-2.签名用的url必须是调用JS接口页面的完整URL。\
-3.出于安全考虑，开发者必须在服务器端实现签名的逻辑。
+1. 签名用的noncestr和timestamp必须与wx.config中的nonceStr和timestamp相同。
+2. 签名用的url必须是调用JS接口页面的完整URL。
+3. 出于安全考虑，开发者必须在服务器端实现签名的逻辑。
 
-服务端node.js代码：
+##### 服务端node.js代码：
 
     'use strict'
     function createNonceStr() {
