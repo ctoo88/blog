@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>loading</title>
+  <style>
+    body { margin: 0; padding: 0; background-color: #3d8d72; }
+
+    #cvs { background-color: #3d8d72; }
+  </style>
+</head>
+
+<body>
+  <canvas id="cvs" width="750" height="750">Your browser does not support the HTML5 canvas tag.</canvas>
+  <script>
+    var c = document.getElementById("cvs")
+      , ctx = c.getContext("2d")
+      , winW = window.innerWidth
+      , waveCount = 3
+      , unit2 = Math.ceil(750 / waveCount) // 一个波峰 + 一个波谷的宽度
+      , waveWidth = unit2 * (waveCount + 1)
+      , waveHeight = 15
+      , unit = unit2 / 2
+      , half = unit / 2
+      , offset = 0
+      , startX = -unit2
+      , startY = 550
+      , offsetY = startY
+      , progress = 0
+      , progressStep = 0.5; // 水涨速度
+
+    // meta
+    if (winW > 750) {
+      c.style.display = "block";
+      c.style.margin = "0 auto";
+    } else {
+      c.style.width = "100%";
+    }
+
+    function update() {
+      var progressNum = 0;
+
+      offset += 3; // 波动速度
+
+      if (offset >= unit2) {
+        offset = 0;
+      }
+
+      progress += progressStep;
+      offsetY = startY - progress;
+
+      if (progress > 265 || progress < 0) {
+        progressStep *= -1;
+      }
+
+      if (offsetY < 300) {
+        progressNum = 100;
+      } else {
+        progressNum = parseInt((750 - offsetY) * 100 / 450);
+      }
+
+      ctx.clearRect(0, 0, cvs.width, cvs.height);
+      ctx.beginPath();
+      ctx.moveTo(startX + offset, offsetY);
+
+      for (var i = 0; i <= waveCount; i++) {
+        var dx = i * unit2;
+        var offsetX = dx + startX + offset;
+        ctx.quadraticCurveTo(offsetX + half, offsetY + waveHeight, offsetX + unit, offsetY);
+        ctx.quadraticCurveTo(offsetX + half + unit, offsetY - waveHeight, offsetX + unit2, offsetY);
+      }
+
+      // wave
+      ctx.lineTo(startX + waveWidth, 750);
+      ctx.lineTo(startX, 750);
+      ctx.fillStyle = "#F4940B";
+      ctx.fill();
+
+      // heart
+      ctx.beginPath();
+      ctx.moveTo(375, 750);
+      ctx.bezierCurveTo(-149, 516, 203, 162, 375, 354);
+      ctx.bezierCurveTo(547, 162, 899, 516, 375, 750);
+      ctx.lineTo(750, 750);
+      ctx.lineTo(750, 0);
+      ctx.lineTo(0, 0);
+      ctx.lineTo(0, 750);
+      ctx.strokeStyle = "#F4940B";
+      ctx.fillStyle = "#3d8d72";
+      ctx.stroke();
+      ctx.fill()
+      ctx.font = "60px Arial";
+      ctx.fillStyle = "#fff";
+      ctx.fillText(progressNum + '%', 315, 520);
+
+      requestAnimationFrame(update);
+    }
+
+    update();
+  </script>
+</body>
+
+</html>
