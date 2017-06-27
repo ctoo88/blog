@@ -61,9 +61,9 @@
       "description": "",
       "main": "index.js",
       "scripts": {
-        "ugly": "set NODE_ENV=production&&envify ./public/dist/bundle.js | uglifyjs -c -m > ./public/dist/bundle.min.js", // 压缩命令
-        "dev": "node cfg.dev.js", // 开发命令
-        "build": "node cfg.build.js && npm run ugly" // 生产命令
+        "ugly": "set NODE_ENV=production&&envify ./public/dist/bundle.js | uglifyjs -c -m > ./public/dist/bundle.min.js",
+        "dev": "node cfg.dev.js",
+        "build": "node cfg.build.js && npm run ugly"
       },
       "author": "ctoo",
       "license": "ISC",
