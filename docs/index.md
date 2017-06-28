@@ -1,4 +1,4 @@
-# 个人笔记
+## 个人笔记
 
 * 2017/06/27 [原生Node.js搭建前端开发工作流（Vue+Browserify）](./workflow)
 * 2017/06/23 [HTML5 Canvas: 贝塞尔曲线](./canvas_bezier)
