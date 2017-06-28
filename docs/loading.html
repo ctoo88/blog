@@ -7,13 +7,14 @@
   <title>loading</title>
   <style>
     body { margin: 0; padding: 0; background-color: #3d8d72; }
-
-    #cvs { background-color: #3d8d72; user-select: none; }
+    #cvs { background-color: #3d8d72; }
+    .modal { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
   </style>
 </head>
 
 <body>
   <canvas id="cvs" width="750" height="750">Your browser does not support the HTML5 canvas tag.</canvas>
+  <div class="modal"></div>
   <script>
     var c = document.getElementById("cvs")
       , ctx = c.getContext("2d")
