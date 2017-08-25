@@ -86,7 +86,7 @@ cfg.dev.js文件：
 
     const fs = require("fs")
         , http = require('http')
-        , queryString = require('queryString')
+        , queryString = require('querystring')
         , express = require('express')
         , bodyParser = require('body-parser') // 获取post请求的请求体
         , browserify = require('browserify')
