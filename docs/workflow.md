@@ -1,17 +1,17 @@
-## 原生Node.js搭建前端开发工作流（Vue + Browserify）
+## 原生NodeJS搭建前端开发工作流（Vue + Browserify）
 
 2017/06/27
 
 ### 关键字
 
->[Node.js](https://nodejs.org/en/) [Express](http://expressjs.com/) [body-parser](https://github.com/expressjs/body-parser) [Browserify](http://browserify.org/) [Vue](https://cn.vuejs.org/) [vueify](https://github.com/vuejs/vueify) [watchify](https://github.com/substack/watchify) [envify](https://github.com/hughsk/envify) [UglifyJS2](https://github.com/mishoo/UglifyJS2) [clean-css](https://github.com/jakubpawlowicz/clean-css)
+>[NodeJS](https://nodejs.org/en/) [Express](http://expressjs.com/) [body-parser](https://github.com/expressjs/body-parser) [Browserify](http://browserify.org/) [Vue](https://cn.vuejs.org/) [vueify](https://github.com/vuejs/vueify) [watchify](https://github.com/substack/watchify) [envify](https://github.com/hughsk/envify) [UglifyJS2](https://github.com/mishoo/UglifyJS2) [clean-css](https://github.com/jakubpawlowicz/clean-css)
 
 ### 概述
 
 主要实现功能：
 
-* 本地服务器（Node.js、Express）
-* 代理服务器（Node.js、Express、body-parser）
+* 本地服务器（NodeJS、Express）
+* 代理服务器（NodeJS、Express、body-parser）
 * 模块化开发（Browserify、Vue、vueify）
 * 开发环境下热更新（watchify）
 * 生产环境下js/css代码压缩（envify、UglifyJS2、clean-css）

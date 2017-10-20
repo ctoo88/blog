@@ -1,4 +1,4 @@
-## 微信公众号JS-SDK开发，服务端采用Node.js
+## 微信公众号JS-SDK开发，服务端采用NodeJS
 
 2017/06/23
 
@@ -127,7 +127,7 @@ jsapi_ticket是公众号用于调用微信JS接口的临时票据。正常情况
 2. 签名用的url必须是调用JS接口页面的完整URL。
 3. 出于安全考虑，开发者必须在服务器端实现签名的逻辑。
 
-##### 服务端node.js代码：
+##### 服务端NodeJS代码：
 
     'use strict'
     function createNonceStr() {
