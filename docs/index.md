@@ -1,5 +1,7 @@
 ## 个人笔记
 
+* 2018/01/07 [Animate.css应用之react](./animate_react)
+
 * 2017/10/20 [NodeJS+Express+MongoDB开发api服务器](./apiserver)
 
 * 2017/08/19 [react+mobx初探](./react_mobx)
