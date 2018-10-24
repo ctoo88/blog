@@ -2,6 +2,8 @@
 
 * 2018/10/24 [ArchLinux安装指南](./arch_linux)
 
+* 2018/07/28 [web规范（private）](./web_standard)
+
 * 2018/05/17 [前端打包工具Browserify与Rollup简单比较](./pkg_tool_compare)
 
 * 2018/01/07 [Animate.css应用之react](./animate_react)
