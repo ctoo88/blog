@@ -1,3 +1,7 @@
+## ArchLinux安装指南
+
+2018/10/24
+
 本文内容主要参照 [Arch Wiki 官方指南](https://wiki.archlinux.org/index.php/Installation_guide)
 
 ##### 准备工作
