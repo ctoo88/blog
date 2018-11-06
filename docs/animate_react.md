@@ -35,7 +35,7 @@
 目前支持的动画类型：
 
 | Class Name | | | | 
-|--------------------|--------------------|--------------------|--------------------|
+|--|--|--|--|
 | `bounce` |`flash` |`pulse` |`rubberBand` |
 | `shake` |`headShake` |`swing` |`tada` |
 | `wobble` |`jello` |`bounceIn` |`bounceInDown` |
