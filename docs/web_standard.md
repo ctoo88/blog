@@ -90,7 +90,7 @@ Recommended
 先显示定位布局类属性，后盒模型等自身属性，最后是文本类及修饰类属性。
 
 |定位布局类|自身属性|文本修饰类饰|
-|--|--|--|--|
+|--|--|--|
 |`display`|`overflow`|`font`|
 |`visibility`|`min-width`|`text-align`|
 |`float`|`width`|`text-decoration`|
