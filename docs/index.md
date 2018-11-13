@@ -1,5 +1,7 @@
 ## 个人笔记
 
+* 2018/11/13 [Android Studio中Gradle配置详解](./gradle_configuration)
+
 * 2018/10/24 [ArchLinux安装指南](./arch_linux)
 
 * 2018/07/28 [web规范（private）](./web_standard)
