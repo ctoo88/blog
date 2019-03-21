@@ -69,9 +69,9 @@
         // google()
         
         /* 阿里镜像 */
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/repositories/jcenter' }
-        maven { url 'http://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
       }
       dependencies {
         classpath 'com.android.tools.build:gradle:3.1.4'
